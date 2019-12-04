@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Zoos-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ZooListViewController" id="BYZ-38-t0r" customClass="ZooListViewController" customModule="RiverExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4BN-Uf-JKZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4BN-Uf-JKZ" secondAttribute="trailing" id="1c0-de-NIw"/>
+                            <constraint firstItem="4BN-Uf-JKZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7lm-TE-aZi"/>
+                            <constraint firstAttribute="bottom" secondItem="4BN-Uf-JKZ" secondAttribute="bottom" id="fvB-mc-pGI"/>
+                            <constraint firstItem="4BN-Uf-JKZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zC3-3W-08X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Zoos" id="ZhU-Mz-LUr"/>
+                    <connections>
+                        <outlet property="zooListTableView" destination="4BN-Uf-JKZ" id="Svu-76-Fz1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--Zoo-->
+        <scene sceneID="eTN-lC-J8k">
+            <objects>
+                <viewController storyboardIdentifier="ZooDetailsViewController" id="NgU-zF-0kQ" customClass="ZooDetailsViewController" customModule="RiverExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ppe-xy-bkH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MQP-if-uH5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gBM-C9-6Bn" firstAttribute="trailing" secondItem="MQP-if-uH5" secondAttribute="trailing" id="Fnk-ay-kqW"/>
+                            <constraint firstItem="MQP-if-uH5" firstAttribute="top" secondItem="Ppe-xy-bkH" secondAttribute="top" id="cT1-fC-bf1"/>
+                            <constraint firstAttribute="bottom" secondItem="MQP-if-uH5" secondAttribute="bottom" id="jx3-t6-ksZ"/>
+                            <constraint firstItem="MQP-if-uH5" firstAttribute="leading" secondItem="gBM-C9-6Bn" secondAttribute="leading" id="zc0-sc-6e9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gBM-C9-6Bn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Zoo" id="5fu-W6-LSB"/>
+                    <connections>
+                        <outlet property="zooFavouriteAnimalsTableView" destination="MQP-if-uH5" id="0zQ-3t-WtS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nc6-pg-Dsg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="138"/>
+        </scene>
+        <!--Animals-->
+        <scene sceneID="vWC-Pv-GlJ">
+            <objects>
+                <viewController id="xbB-8o-OpO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Amd-0b-Nr2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gqU-Vf-5b1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gqU-Vf-5b1" firstAttribute="leading" secondItem="ZsF-bW-lfa" secondAttribute="leading" id="9A9-Zj-x83"/>
+                            <constraint firstItem="gqU-Vf-5b1" firstAttribute="top" secondItem="Amd-0b-Nr2" secondAttribute="top" id="Bu1-ow-pgQ"/>
+                            <constraint firstItem="ZsF-bW-lfa" firstAttribute="trailing" secondItem="gqU-Vf-5b1" secondAttribute="trailing" id="LaY-cJ-AmV"/>
+                            <constraint firstAttribute="bottom" secondItem="gqU-Vf-5b1" secondAttribute="bottom" id="YDr-ek-IBN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZsF-bW-lfa"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animals" id="vj9-cC-4dZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMl-Hl-zve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1599" y="138"/>
+        </scene>
+        <!--Animal-->
+        <scene sceneID="z2i-QH-Rzw">
+            <objects>
+                <viewController id="gbK-a0-bhL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PI6-im-Gaz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vqw-eq-VpT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animal" id="OQJ-en-yUj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dnf-8W-kbr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2303" y="138"/>
+        </scene>
+    </scenes>
+</document>

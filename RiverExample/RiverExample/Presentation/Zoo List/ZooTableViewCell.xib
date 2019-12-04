@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wyP-BD-d1X" customClass="ZooTableViewCell" customModule="RiverExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wyP-BD-d1X" id="RFb-Vd-Ivi">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tn-Bb-e5U">
+                        <rect key="frame" x="20" y="15" width="42" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1tn-Bb-e5U" firstAttribute="top" secondItem="RFb-Vd-Ivi" secondAttribute="top" constant="15" id="7mK-NC-gTO"/>
+                    <constraint firstItem="1tn-Bb-e5U" firstAttribute="centerY" secondItem="RFb-Vd-Ivi" secondAttribute="centerY" id="GB9-yM-iLF"/>
+                    <constraint firstItem="1tn-Bb-e5U" firstAttribute="leading" secondItem="RFb-Vd-Ivi" secondAttribute="leading" constant="20" id="T5b-MB-DAV"/>
+                    <constraint firstAttribute="bottom" secondItem="1tn-Bb-e5U" secondAttribute="bottom" constant="15" id="ldp-5F-E0B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="zooNameLabel" destination="1tn-Bb-e5U" id="GaB-um-4CB"/>
+            </connections>
+            <point key="canvasLocation" x="107" y="37"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="e5R-x4-ECs" customClass="AnimalTableViewCell" customModule="RiverExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e5R-x4-ECs" id="Mhb-Og-XKl">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUf-yO-VDl">
+                        <rect key="frame" x="20" y="15" width="42" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dp-Sg-HID">
+                        <rect key="frame" x="356.5" y="13" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hUf-yO-VDl" firstAttribute="leading" secondItem="Mhb-Og-XKl" secondAttribute="leading" constant="20" id="YlU-YY-18J"/>
+                    <constraint firstItem="1Dp-Sg-HID" firstAttribute="centerY" secondItem="Mhb-Og-XKl" secondAttribute="centerY" id="fYn-9p-IsL"/>
+                    <constraint firstAttribute="trailing" secondItem="1Dp-Sg-HID" secondAttribute="trailing" constant="20" id="hl9-aZ-pTY"/>
+                    <constraint firstAttribute="bottom" secondItem="hUf-yO-VDl" secondAttribute="bottom" constant="15" id="oBM-Ds-G2k"/>
+                    <constraint firstItem="hUf-yO-VDl" firstAttribute="top" secondItem="Mhb-Og-XKl" secondAttribute="top" constant="15" id="uR3-K0-kjZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="animalNameLabel" destination="hUf-yO-VDl" id="WqS-ya-gYG"/>
+                <outlet property="animalPopularityLabel" destination="1Dp-Sg-HID" id="PTd-CU-wyz"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="89"/>
+        </tableViewCell>
+    </objects>
+</document>
